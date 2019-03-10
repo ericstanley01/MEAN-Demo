@@ -1,0 +1,9 @@
+{
+  "env": {
+    "MONGO_ATLAS_USER": "test-user-01",
+    "MONGO_ATLAS_PW": "8MntRVmanUxf85P1",
+    "MONGO_ATLAS_SERVER": "localhost:27017",
+    "MONGO_ATLAS_DB": "mean-demo",
+    "JWT_KEY": "passkey"
+  }
+}
