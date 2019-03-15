@@ -3,20 +3,20 @@ import { CommonModule } from '@angular/common';
 import { AngularMaterialModule } from '../angular-material.module';
 import { FormsModule } from '@angular/forms';
 
-import { LoginComponent } from './login/login.component';
-import { AuthRoutingModule } from './auth-routing.module';
+import { SignupComponent } from '../user/signup/signup.component';
+import { UserRoutingModule } from './user-routing.module';
 
 
 @NgModule({
   declarations: [
-    LoginComponent
+    SignupComponent
   ],
   imports: [
     CommonModule,
     FormsModule,
     AngularMaterialModule,
-    AuthRoutingModule
+    UserRoutingModule
   ]
 })
 
-export class AuthModule {}
+export class UserModule { }

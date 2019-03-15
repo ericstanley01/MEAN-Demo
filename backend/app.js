@@ -8,16 +8,24 @@ const userRoutes = require('./routes/user');
 
 const app = express();
 
-mongoose.connect('mongodb://' + process.env.MONGO_ATLAS_USER + ':'
-  + process.env.MONGO_ATLAS_PW
-  + '@' + process.env.MONGO_ATLAS_SERVER
-  + '/' + process.env.MONGO_ATLAS_DB
-  + '?retryWrites=true', { useNewUrlParser: true })
+mongoose
+  .connect(
+    "mongodb+srv://" +
+      process.env.MONGO_ATLAS_USER +
+      ":" +
+      process.env.MONGO_ATLAS_PW +
+      "@" +
+      process.env.MONGO_ATLAS_SERVER +
+      "/" +
+      process.env.MONGO_ATLAS_DB +
+      "?retryWrites=true",
+    { useNewUrlParser: true }
+  )
   .then(() => {
-    console.log('Connected to database');
+    console.log("Connected to database");
   })
   .catch(() => {
-    console.log('Connection failed');
+    console.log("Connection failed");
   });
 
 app.use(bodyParser.json());
