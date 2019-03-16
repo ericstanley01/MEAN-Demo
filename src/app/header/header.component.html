@@ -26,9 +26,9 @@
       <mat-icon>tag_faces</mat-icon>
       <span>Profile</span>
     </button>
-    <button mat-menu-item>
+    <button mat-menu-item (click)="onLogout()">
       <mat-icon>link_off</mat-icon>
-      <span (click)="onLogout()">Logout</span>
+      <span>Logout</span>
     </button>
   </mat-menu>
 </mat-toolbar>
