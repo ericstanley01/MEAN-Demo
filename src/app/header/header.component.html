@@ -12,10 +12,23 @@
       <a mat-button routerLink="/user/signup" routerLinkActive="mat-accent">Signup</a>
     </li>
     <li *ngIf="userIsAuthenticated">
-      <button mat-button (click)="onLogout()">Logout</button>
-    </li>
-    <li *ngIf="userIsAuthenticated">
-      <label mat-label>Hi there {{ username }}!</label>
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>more_vert</mat-icon>
+      </button>
     </li>
   </ul>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item disabled>
+      <mat-icon>settings</mat-icon>
+      <span>Settings</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>tag_faces</mat-icon>
+      <span>Profile</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>link_off</mat-icon>
+      <span (click)="onLogout()">Logout</span>
+    </button>
+  </mat-menu>
 </mat-toolbar>
