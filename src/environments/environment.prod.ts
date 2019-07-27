@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiURL: ''
+  apiURL: 'http://meandemo-env.vpfwqvjdvv.us-east-1.elasticbeanstalk.com/api'
 };
