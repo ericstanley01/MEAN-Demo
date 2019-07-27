@@ -24,7 +24,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 ## Start server
 
-Run `npm run start-server` to start the node server. Make sure to update the config settings in nodemon.json file
+Run `npm run start-server` to start the node server. Make sure to update the config settings in `nodemon.json` file
 
 ## Further help
 
