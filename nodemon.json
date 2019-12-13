@@ -1,9 +1,9 @@
 {
   "env": {
-    "MONGO_ATLAS_USER": "test-user-01",
-    "MONGO_ATLAS_PW": "8MntRVmanUxf85P1",
-    "MONGO_ATLAS_SERVER": "test-cluster-01-rej5u.mongodb.net",
-    "MONGO_ATLAS_DB": "mean-demo",
-    "JWT_KEY": "passkey"
+    "MONGO_ATLAS_USER": "mongo_atlas_username",
+    "MONGO_ATLAS_PW": "mongo_atlas_password",
+    "MONGO_ATLAS_SERVER": "mongo_atlas_server",
+    "MONGO_ATLAS_DB": "mongo_atlas_db",
+    "JWT_KEY": "jwt_key"
   }
 }
