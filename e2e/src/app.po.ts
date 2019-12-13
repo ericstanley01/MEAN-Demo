@@ -1,4 +1,5 @@
 import { browser, by, element } from 'protractor';
+import { resolve } from 'dns';
 
 export class AppPage {
   navigateTo() {
@@ -6,6 +7,7 @@ export class AppPage {
   }
 
   getTitleText() {
-    return element(by.css('app-root h1')).getText() as Promise<string>;
+    return browser.getTitle()
   }
+
 }

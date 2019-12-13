@@ -1,16 +1,16 @@
 import { AppPage } from './app.po';
 import { browser, logging } from 'protractor';
 
-describe('workspace-project App', () => {
+describe('Messaging App', () => {
   let page: AppPage;
 
   beforeEach(() => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('verify title text', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to mean-stack-demo!');
+    expect(page.getTitleText()).toEqual('MEAN Stack Demo')
   });
 
   afterEach(async () => {
