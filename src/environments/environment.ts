@@ -1,11 +1,11 @@
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
-declare var process: { env: { [key: string]: string } };
+require("dotenv").config();
+
 export const environment = {
   production: false,
-  apiURL: "http://localhost:3000/api",
-  // apiURL: "https://heroku-mean-demo-backend.herokuapp.com/api",
+  apiURL: process.env.TEST_API_ENDPOINT,
 };
 
 /*

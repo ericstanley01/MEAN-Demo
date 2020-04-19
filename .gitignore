@@ -9,6 +9,7 @@
 /node_modules
 
 # environments
+.env
 /src/environments
 
 # profiling files
