@@ -1,4 +1,4 @@
-import { AppPage } from './app.po';
+import { AppPage } from '../pages/homePage';
 import { browser, logging } from 'protractor';
 
 describe('Messaging App', () => {
