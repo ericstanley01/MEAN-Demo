@@ -6,7 +6,7 @@
 declare var process: { env: { [key: string]: string } };
 export const environment = {
   production: false,
-  apiURL: process.env.TEST_API_ENDPOINT,
+  apiURL: "http://localhost:3000/api",
 };
 
 /*

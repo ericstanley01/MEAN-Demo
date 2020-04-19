@@ -1424,7 +1424,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const environment = {
     production: false,
-    apiURL: process.env.TEST_API_ENDPOINT,
+    apiURL: "http://localhost:3000/api",
 };
 /*
  * For easier debugging in development mode, you can import the following file
