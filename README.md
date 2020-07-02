@@ -33,4 +33,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Demo
 
 https://mean-stack-demo.netlify.app/ <br />
-https://mean-stack-demo.onrender.com/
+https://mean-stack-demo.onrender.com/ <br />
+https://mean-stack-demo.vercel.app/
